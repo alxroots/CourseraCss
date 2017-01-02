@@ -1,0 +1,124 @@
+/******* SETTING UP DOCUMENT ***********/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+
+/****** COLORING STYLING ******/
+h1 {
+  font-size: 175%;
+}
+h3 {
+  font-size: 125%;
+}
+
+#section1 .title h3 {
+  background-color: #82dfae; /*Pearl Aqua*/
+}
+#section2 .title h3{
+  background-color: #ff5a6b; /*Pastel Red*/
+  color: white;
+}
+#section3 .title h3{
+  background-color: #93c9fe; /*Light Sky Blue*/
+}
+
+section {
+  background-color: #fec273; /*Topaz*/
+  border: solid 1px black;
+}
+
+/****** SIZING AND POSITIONING *****/
+
+#head-title {
+  text-align: center;
+}
+section {
+  position: relative;
+  margin-right: 15px;
+}
+.container {
+  margin-left: 25px;
+}
+.title h3 { /*title region (Box-Title)*/
+  text-align: center;
+  margin: 0;
+  border-left: solid 1px black;
+  border-bottom: solid 1px black;
+  text-align: center;
+  width: 100px;
+  float:right;
+  margin-bottom: 10px;
+}
+#content {
+  clear: right;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+/****************************RESPONSIVE SETTINGS***************************/
+
+.defaultRow {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .full-lg, .half-lg, .third-lg {
+      float: left;
+    }
+    .full-lg {
+      width: 100%;
+    }
+    .half-lg {
+      width: 50%;
+    }
+    .third-lg {
+      width: 33%;
+    }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .full-md, .half-md, .third-md{
+    float: left;
+  }
+  .full-md {
+    width: 100%;
+  }
+  .half-md {
+    width: 50%;
+  }
+  .third-md {
+    width: 33%;
+  }
+
+/** Positioning Responsive **/
+  #section3 {
+    margin-top: 30px;
+  }
+  #section1 {
+    margin-right: 30px;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .full-sm, .half-sm, .third-sm {
+    float: left;
+  }
+  .full-sm {
+    width: 100%;
+  }
+  .half-sm {
+    width: 50%;
+  }
+  .third-sm {
+    width: 33%;
+  }
+  /** Positioning Responsive **/
+    section {
+      margin-bottom: 20px;
+    }
+}
